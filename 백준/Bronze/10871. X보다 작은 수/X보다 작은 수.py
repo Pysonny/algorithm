@@ -1,10 +1,5 @@
-N , X  = list(map(int,input().split()))
-A = list(map(int,input().split()))
-
-for n in A[:]:
-    if n > X-1:
-        A.remove(n)
-    else:
-        continue
-
-print(*A)
+a , b = map(int,input().split())
+T = map(int,input().split())
+for i in T:
+    if i < b :
+        print(i,end=' ')
