@@ -1,8 +1,11 @@
-for i in range(int(input())):
-    C = int(input())
-    d = [25,10,5,1]
-    l = []
-    for n in d:
-        l.append(C//n)
-        C = C %n
-    print(*l)
+T = int(input())
+
+for t in range(1,T+1):
+    money = int(input())
+    li = [25,10,5,1]
+    result = []
+    for i in li:
+        result.append(money//i)
+        money=money % i 
+    print(*result)
+    
